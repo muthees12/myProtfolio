@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+      integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="img/Akil gowtham1.png" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="C:\Users\mkesw\Downloads\download (5).png" alt="" class="logo" />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-align">
+          <img src="C:\Users\mkesw\Downloads\IMG_20250409_153700.jpg" alt="" class="profile" />
+        </div>
+
+        <div class="header-text">
+          <p class="shadow-text">Ui/Ux Developer</p>
+          <h1>
+            Hi, I'm <span>Mutheeswaran</span> from India, a passionate ui/ux designar
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!---------------about section-------------->
+    <div id="about">
+      <div>
+        <div class="row">
+          <div class="about-col-1">
+            <img src="C:\Users\mkesw\Downloads\IMG_20250409_153700.jpg" alt="Profile pic" id="profile-pic" />
+          </div>
+          <div class="about-col-2">
+            <h1>About Me</h1>
+            <p>Get to Know More</p>
+            <p class="my-bio">
+              Hello! I'm Mutheeswaran, a dedicated student from India, currently
+              pursuing my Master <br />of Computer Applications (MCA) at Madurai
+              Kamaraj University, where I am<br />
+              set to graduate in 2025. I have a strong foundation in Computer
+              Science, having<br />
+              completed my Bachelor of Science in Computer Science at The
+              American College.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('passion')">
+                Passion
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="passion">
+              <ul>
+                <li>
+                  <span>UI/UX DESIGNAR</span><br />Developing Web
+                  pages/App Interfaces/ Enhanced User experience.
+                </li>
+                
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>UI</span><br />HTML-CSS-JavaScript</li>
+                <li>
+                  <span>UX</span><br />Figma <br> Adobe XD <br> Wordpress <br> Mysql
+                  
+                </li>
+                <li><span>WIREFRAMING</span><br />Balsamiq</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2025</span><br />MCA From Madurai Kamaraj University
+                </li>
+                <li>
+                  <span>2023</span><br />BSC in Computer Science From The
+                  American College
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------services--------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>UI(user interface)</h2>
+            <p>
+              Creating responsive and user-friendly websites using HTML, CSS,<br />
+              and JavaScript. From personal blogs to corporate sites, I bring
+              your <br />
+              vision to life with clean code and modern design.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UX(user experience)</h2>
+            <p>
+              UX services encompass a range of activities focused on understanding and improving a user's interaction with a product or service. <br />
+              These services include wireframing,prototyping,testing,and design implementations. <br />
+              
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------portfolio------------>
+    <div id="portfolio">
+      <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Instagram App</h3>
+              <p>
+                The basic instagram app interface using figma tool
+              </p>
+              <a
+                href="https://www.figma.com/design/nfFKyJYLaBob5K0lOuLZIw/Untitled?node-id=0-1&t=GW887CHYPLXQcIwm-1"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.png" alt="" />
+            <div class="layer">
+              <h3>FIGMA</h3>
+              <p>
+                The Basic online store website  built with figma tool.
+              </p>
+              <a href="https://www.figma.com/design/nfFKyJYLaBob5K0lOuLZIw/Untitled?node-id=38-2&t=pKzccCYqWIxB6esp-1"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-3.png" alt="" />
+            <div class="layer">
+              <h3>ABODE XD</h3>
+              <p>
+                the basic tool with abode xd.
+                <a href="https://xd.adobe.com/view/c920599a-f362-4831-9247-a335e1e0570b-9c73/"
+                > <br><i class="fa-solid fa-link"></i
+                ></a>
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!----------contact------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <a href="mailto:mkeswaran2003@gmail.com" class="con"
+              ><p>
+                <i class="fa-solid fa-envelope"></i>
+                mkeswaran2003@gmail.com
+              </p></a
+            >
+            <a href="tel:+919025423094" class="con"
+              ><p><i class="fa-solid fa-phone"></i>9025423094</p></a
+            >
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/Mutheeswaran/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/AkilGowthlam2003"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/muthxs__?igsh=bjY3dHZ1bXVydXY="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="C:\Users\mkesw\Desktop\FINAL PROJECTS\muthees resume.pdf" download class="btn btn2"
+              >Download My CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="" name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required 
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Your Mail Id"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Mutheeswaran. Made with <i class="fa-solid fa-heart"></i> by Me
+        </p>
+      </div>
+    </div>
+    <!---------script-------------->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sideMenu = document.getElementById("sideMenu");
+       
+      function openMenu(){
+        sideMenu.style.right="0px";
+      }
+
+      function closeMenu(){
+        sideMenu.style.right="-200px";
+      }
+    </script>
+    <form name="submit-to-google-sheet">
+      
+    </form>
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx-H6PFKepXH6dUJmYvxTPmwI6q4CJdpuq51wc8CnuPoh0CgEgpIaJGqoySaaoz-cDS/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg");
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message Sent Successfully"
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
